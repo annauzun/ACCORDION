@@ -1,20 +1,15 @@
-const items = document.querySelectorAll(".item")
+const items = document.querySelectorAll(".item");
 
-console.log(items)
+console.log(items);
 
-items.forEach(item => {
-    item.addEventListener("click", () => {
-        const answer = item.querySelector(".answer")
-        const line = item.querySelector(".line")
-        const po = item.querySelector(".po")
+items.forEach((item) => {
+  item.addEventListener("click", () => {
+    const answer = item.querySelector(".answer");
+    const hide = item.querySelector(".hide");
+    const show = item.querySelector(".show");
 
-        answer.classList.toggle("hidden")
-        line.classList.toggle("hidden")
-        po.classList.toggle("hidden")
-    })
-})
-
-
-
-
-
+    answer.classList.toggle("hidden");
+    hide.classList.toggle("hidden");
+    show.classList.toggle("hidden");
+  });
+});
